@@ -6,5 +6,16 @@ namespace TPModul3
         {
             InitializeComponent();
         }
+
+        private void lblOutput_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string namaPraktikum = txtInput.Text;
+            lblOutput.Text = "Halo " + namaPraktikum;
+        }
     }
 }

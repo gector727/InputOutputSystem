@@ -28,12 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            txtInput = new TextBox();
+            btnSubmit = new Button();
+            lblOutput = new Label();
+            SuspendLayout();
+            // 
+            // txtInput
+            // 
+            txtInput.Location = new Point(12, 65);
+            txtInput.Name = "txtInput";
+            txtInput.Size = new Size(202, 23);
+            txtInput.TabIndex = 1;
+            // 
+            // btnSubmit
+            // 
+            btnSubmit.Location = new Point(73, 111);
+            btnSubmit.Name = "btnSubmit";
+            btnSubmit.Size = new Size(75, 23);
+            btnSubmit.TabIndex = 2;
+            btnSubmit.Text = "Submit";
+            btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.Click += btnSubmit_Click;
+            // 
+            // lblOutput
+            // 
+            lblOutput.Location = new Point(23, 2);
+            lblOutput.Name = "lblOutput";
+            lblOutput.Size = new Size(180, 49);
+            lblOutput.TabIndex = 3;
+            lblOutput.Text = "OUTPUT";
+            lblOutput.TextAlign = ContentAlignment.MiddleCenter;
+            lblOutput.Click += lblOutput_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 14F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(lblOutput);
+            Controls.Add(btnSubmit);
+            Controls.Add(txtInput);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtInput;
+        private Button btnSubmit;
+        private Label lblOutput;
     }
 }
