@@ -1,4 +1,3 @@
-Aplikasi ini dibangun menggunakan C# dengan framework Windows Forms. Pada antarmuka disediakan sebuah komponen TextBox (bernama txtInput) untuk menerima input string dari pengguna, sebuah komponen Button (btnSubmit) untuk mentrigger aksi, dan sebuah Label (lblOutput) untuk menampilkan hasil.
-Saat pengguna menekan tombol Submit, event handler btnSubmit_Click akan tereksekusi. Kode string namaPraktikum = txtInput.Text; akan mengambil/membaca isi teks dari kotak input dan menyimpannya ke dalam sebuah variabel. Setelah itu, kode lblOutput.Text = "Halo " + namaPraktikum; akan menggabungkan teks konstan "Halo " dengan teks yang dimasukkan oleh pengguna (NAMA_PRAKTIKUM, lalu memperbarui teks yang ditampilkan pada label output.
+Aplikasi ini dibangun menggunakan C# dengan framework Windows Forms.
 <img width="280" height="220" alt="image" src="https://github.com/user-attachments/assets/06469259-2815-45bb-b04a-4e7b077c1b4c" />
 <img width="280" height="220" alt="image" src="https://github.com/user-attachments/assets/068ab1de-4ee8-49d5-8418-4d7a8a4688ed" />
